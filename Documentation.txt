@@ -1,0 +1,194 @@
+Finance Tracker - Python Project Documentation
+
+Overview
+
+Finance Tracker is a terminal-based budget and expense management application written in Python. This beginner-level project is designed to help users track their income, categorize expenses, set monthly budgets, and perform basic analysis on spending habits. The entire application runs through command-line interactions without the use of functions, making it ideal for new Python learners.
+
+Features
+
+1. User Personalization
+
+Greets the user by name upon launching the program.
+
+2. Current Status
+
+Prompts user to enter monthly salary.
+
+Calculates and displays:
+
+Total monthly salary
+
+Total expenses made so far
+
+Remaining balance
+
+3. Transactions
+
+Add new expense:
+
+Input description, amount, optional note
+
+Select existing category or create a new one
+
+Automatically tags the expense with today’s date
+
+View all transactions in a list format
+
+View today’s expenses only
+
+4. Budgeting
+
+Set total monthly budget
+
+Update monthly budget anytime
+
+Set per-category spending limits
+
+Warns if category budget is exceeded
+
+5. Analysis
+
+Displays the following analytics based on entered expenses:
+
+Total expenses
+
+Average expense value
+
+Highest and lowest individual expenses
+
+Category-wise total expense breakdown
+
+6. Filter / Search / Delete
+
+Filter expenses by category
+
+Search expenses using keywords from description or notes
+
+Delete specific transactions with confirmation
+
+7. Reset Month
+
+Clears all stored data for a new month including:
+
+Expenses
+
+Salary
+
+Monthly budget
+
+Category limits
+
+8. Exit and Save
+
+On exiting, the program creates a finance_summary.txt file containing:
+
+User name
+
+Total expenses
+
+List of all transactions with dates, categories, and notes
+
+Technologies Used
+
+Language:
+
+Python 3.7+
+
+Python Modules:
+
+datetime – To record the current date
+
+Built-in functions: sum(), max(), min(), enumerate(), input(), print()
+
+Data Structures:
+
+Lists: For storing expenses and categories
+
+Dictionaries: For storing individual expense details and category-wise limits
+
+Data Storage (In-Memory)
+
+salary: Stores user's monthly income
+
+expenses: List of dictionaries, where each dictionary holds:
+
+description: what the money was spent on
+
+amount: amount of money spent
+
+category: the category of the expense
+
+date: the date when the expense was made
+
+note: optional user note
+
+monthly_budget: Overall monthly spending limit
+
+categories: Default and user-defined spending categories
+
+category_limits: Dictionary storing per-category budget caps
+
+User Flow Summary
+
+Launch the program and enter name
+
+Choose from 7 main options:
+
+View current status
+
+Manage transactions
+
+Set/update budgets
+
+Analyze spending
+
+Search, filter, or delete expenses
+
+Reset monthly data
+
+Exit and save
+
+On exit, a text report is generated summarizing the financial activity
+
+How to Run the Program
+
+Ensure Python 3.7+ is installed
+
+Save the code to a file named finance_tracker.py
+
+Run the script in terminal:
+
+python finance_tracker.py
+
+Example Files in Project
+
+File Name
+
+Purpose
+
+finance_tracker.py
+
+Main Python script
+
+finance_summary.txt
+
+Auto-generated report on program exit
+
+README.md
+
+Project documentation
+
+Prevents uploading unnecessary files
+
+Future Improvements
+
+Modularize the code using functions and classes
+
+Add persistent storage using JSON or CSV files
+
+Implement a graphical user interface (GUI) with Tkinter
+
+Visualize category spending using bar or pie charts
+
+Add user login/signup for personalized profiles
+
